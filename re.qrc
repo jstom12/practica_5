@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>resources/pacman.jpg</file>
+        <file>resources/fondo.jpeg</file>
+        <file>resources/pacman_2.png</file>
+        <file>resources/pacman_3.png</file>
+        <file>resources/pacman_fondo.jpg</file>
+    </qresource>
+</RCC>
