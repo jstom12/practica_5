@@ -21,6 +21,10 @@ public:
     void setPosx(int value);
     int getPosy() const;
     void setPosy(int value);
+    void MoveRight();
+    void MoveLeft();
+    void MoveUp();
+    void MoveDown();
 };
 
 #endif // JUGADOR_H

@@ -5,6 +5,7 @@
 #include <QMainWindow>
 #include <QKeyEvent>
 #include <QTimer>
+#include <QDebug>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,7 +23,7 @@ private:
     Ui::MainWindow *ui;
     jugador *player;
     QGraphicsScene *scene;
-    //void keyPressEvent(QKeyEvent *evento);
+    void keyPressEvent(QKeyEvent *evento);
     QTimer *timer;
 
 };

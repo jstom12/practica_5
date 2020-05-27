@@ -51,6 +51,30 @@ QRectF jugador::boundingRect() const
 void jugador::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
     QPixmap pixmap;
-    pixmap.load(":/resources/resources/pacman.jpg");
+    pixmap.load(":/resources/resources/pacman_3.png");
     painter->drawPixmap(boundingRect(),pixmap,pixmap.rect());
+}
+
+void jugador::MoveRight()
+{
+    posx+=10;//*vel;
+    setPos(posx,posy);
+}
+
+void jugador::MoveLeft()
+{
+    posx-=10;//*vel;
+    setPos(posx,posy);
+}
+
+void jugador::MoveUp()
+{
+    posy-=10;//*vel;
+    setPos(posx,posy);
+}
+
+void jugador::MoveDown()
+{
+    posy+=10;//*vel;
+    setPos(posx,posy);
 }
