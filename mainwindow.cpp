@@ -8,10 +8,10 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     scene= new QGraphicsScene();
     ui->graphicsView->setScene(scene);
-    scene->setSceneRect(-100,-100,200,200);
+    scene->setSceneRect(0,0,780,350);
     scene->backgroundBrush();
-    ui->graphicsView->setBackgroundBrush(QPixmap(":/resources/resources/fondo.jpeg"));
-    player= new jugador(20,0,0);
+    ui->graphicsView->setBackgroundBrush(QPixmap(":/resources/resources/fondo_pacm_man.png"));
+    player= new jugador(20,40,40);
     scene->addItem(player);
     timer= new QTimer;
     connect(timer,SIGNAL(timeout()),this,SLOT(mover()));

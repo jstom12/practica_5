@@ -5,5 +5,6 @@
         <file>resources/pacman_2.png</file>
         <file>resources/pacman_3.png</file>
         <file>resources/pacman_fondo.jpg</file>
+        <file>resources/fondo_pacm_man.png</file>
     </qresource>
 </RCC>
