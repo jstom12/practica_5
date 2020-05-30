@@ -50,9 +50,11 @@ QRectF jugador::boundingRect() const
 
 void jugador::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-    QPixmap pixmap;
+    /*QPixmap pixmap;
     pixmap.load(":/resources/resources/pacman_3.png");
-    painter->drawPixmap(boundingRect(),pixmap,pixmap.rect());
+    painter->drawPixmap(boundingRect(),pixmap,pixmap.rect());*/
+    painter->setBrush(Qt::yellow);
+    painter->drawEllipse(boundingRect());
 }
 
 void jugador::MoveRight()

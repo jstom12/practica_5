@@ -18,11 +18,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     jugador.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    pared.cpp
 
 HEADERS += \
     jugador.h \
-    mainwindow.h
+    mainwindow.h \
+    pared.h
 
 FORMS += \
     mainwindow.ui
