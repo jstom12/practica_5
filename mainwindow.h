@@ -52,6 +52,36 @@ private:
     pared *pared_23;
     pared *pared_24;
     pared *pared_25;
+    pared *pared_26;
+    pared *pared_27;
+    pared *pared_28;
+    pared *pared_29;
+    pared *pared_30;
+    pared *pared_31;
+    pared *pared_32;
+    pared *pared_33;
+    pared *pared_34;
+    pared *pared_35;
+    pared *pared_36;
+    pared *pared_37;
+    pared *pared_38;
+    pared *pared_39;
+    pared *pared_40;
+    pared *pared_41;
+    pared *pared_42;
+    pared *pared_43;
+    pared *pared_44;
+    pared *pared_45;
+    pared *pared_46;
+    pared *pared_47;
+    pared *pared_48;
+    pared *pared_49;
+    pared *pared_50;
+    pared *pared_51;
+    pared *pared_52;
+    pared *pared_53;
+    pared *pared_54;
+
 
     QList<pared *> paredes_der;
     QList<pared *> paredes_izq;

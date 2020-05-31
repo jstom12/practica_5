@@ -13,9 +13,9 @@ MainWindow::MainWindow(QWidget *parent)
     ui->graphicsView->setBackgroundBrush(QPixmap());
     player= new jugador(10,20,20);
     pared_9 = new pared(0,0,520,10);//arriba-
-    pared_10 = new pared(0,0,10,300);//izquierda-
-    pared_11 = new pared(-520,0,10,300);//derecha-
-    pared_12 = new pared(0,-300,530,10);//abajo-
+    pared_10 = new pared(0,0,10,320);//izquierda-
+    pared_11 = new pared(-520,0,10,320);//derecha-
+    pared_12 = new pared(0,-320,530,10);//abajo-
 
     pared_1 = new pared(-50,-50,80,5);//abajo-
     pared_2 = new pared(-50,-60,80,5);//arriba-
@@ -35,9 +35,36 @@ MainWindow::MainWindow(QWidget *parent)
     pared_17 = new pared(-490,-10,5,100);//derecha-
     pared_21 = new pared(-490,-110,30,5);//arriba-
     pared_22 = new pared(-50,-110,320,5);//abajo-
-    pared_23 = new pared(-50,-110,5,50);//derecha
-    pared_24 = new pared(-370,-110,5,50);//izquierda
-    pared_25 = new pared(-50,-160,325,5);//arriba
+    pared_23 = new pared(-50,-110,5,50);//derecha-
+    pared_24 = new pared(-370,-110,5,50);//izquierda-
+    pared_25 = new pared(-50,-160,325,5);//arriba-
+    pared_26 = new pared(-50,-200,60,5);//abajo-
+    pared_27 = new pared(-50,-200,5,40);//derecha
+    pared_28 = new pared(-110,-200,5,40);//izquierda
+    pared_29 = new pared(-50,-240,65,5);//arriba-
+    pared_30 = new pared(-10,-270,60,5);//abajo-
+    pared_31 = new pared(-10,-290,65,5);//arriba-
+    pared_32 = new pared(-70,-270,5,20);//izquierda-
+    pared_33 = new pared(-160,-290,45,5);//arriba-
+    pared_34 = new pared(-160,-200,40,5);//abajo-
+    pared_35 = new pared(-160,-200,5,90);//derecha-
+    pared_36 = new pared(-200,-200,5,90);//izquierda-
+    pared_37 = new pared(-110,-270,10,5);//abajo-
+    pared_38 = new pared(-110,-270,5,50);//derecha-
+    pared_39 = new pared(-120,-270,5,50);//izquierda-
+    pared_40 = new pared(-240,-260,60,5);//abajo-
+    pared_41 = new pared(-240,-260,5,30);//derecha-
+    pared_42 = new pared(-240,-290,100,5);//arriba-
+    pared_43 = new pared(-300,-200,40,5);//abajo-
+    pared_44 = new pared(-300,-200,5,65);//derecha-
+    pared_45 = new pared(-240,-200,20,5);//abajo-
+    pared_46 = new pared(-340,-200,5,95);//izquierda-
+    pared_47 = new pared(-240,-200,5,20);//derecha-
+    pared_48 = new pared(-260,-200,5,25);//izquierda-
+    pared_49 = new pared(-240,-220,20,5);//arriba-
+
+    pared_50 = new pared(-430,-260,90,5);//abajo
+    pared_51 = new pared(-430,-260,5,60);//derecha
 
     scene->addItem(player);
     scene->addItem(pared_1);
@@ -65,6 +92,32 @@ MainWindow::MainWindow(QWidget *parent)
     scene->addItem(pared_23);
     scene->addItem(pared_24);
     scene->addItem(pared_25);
+    scene->addItem(pared_26);
+    scene->addItem(pared_27);
+    scene->addItem(pared_28);
+    scene->addItem(pared_29);
+    scene->addItem(pared_30);
+    scene->addItem(pared_31);
+    scene->addItem(pared_32);
+    scene->addItem(pared_33);
+    scene->addItem(pared_34);
+    scene->addItem(pared_35);
+    scene->addItem(pared_36);
+    scene->addItem(pared_37);
+    scene->addItem(pared_38);
+    scene->addItem(pared_39);
+    scene->addItem(pared_40);
+    scene->addItem(pared_41);
+    scene->addItem(pared_42);
+    scene->addItem(pared_43);
+    scene->addItem(pared_44);
+    scene->addItem(pared_45);
+    scene->addItem(pared_46);
+    scene->addItem(pared_47);
+    scene->addItem(pared_48);
+    scene->addItem(pared_49);
+    scene->addItem(pared_50);
+    scene->addItem(pared_51);
     timer= new QTimer;
 
     //Derecha
@@ -75,6 +128,12 @@ MainWindow::MainWindow(QWidget *parent)
     paredes_der.push_back(pared_16);
     paredes_der.push_back(pared_17);
     paredes_der.push_back(pared_23);
+    paredes_der.push_back(pared_27);
+    paredes_der.push_back(pared_35);
+    paredes_der.push_back(pared_38);
+    paredes_der.push_back(pared_41);
+    paredes_der.push_back(pared_44);
+    paredes_der.push_back(pared_47);
 
     //izquierda
     paredes_izq.push_back(pared_8);
@@ -83,6 +142,12 @@ MainWindow::MainWindow(QWidget *parent)
     paredes_izq.push_back(pared_15);
     paredes_izq.push_back(pared_19);
     paredes_izq.push_back(pared_24);
+    paredes_izq.push_back(pared_28);
+    paredes_izq.push_back(pared_32);
+    paredes_izq.push_back(pared_36);
+    paredes_izq.push_back(pared_39);
+    paredes_izq.push_back(pared_46);
+    paredes_izq.push_back(pared_48);
 
     //arriba
     paredes_up.push_back(pared_2);
@@ -92,6 +157,11 @@ MainWindow::MainWindow(QWidget *parent)
     paredes_up.push_back(pared_14);
     paredes_up.push_back(pared_21);
     paredes_up.push_back(pared_25);
+    paredes_up.push_back(pared_29);
+    paredes_up.push_back(pared_31);
+    paredes_up.push_back(pared_33);
+    paredes_up.push_back(pared_42);
+    paredes_up.push_back(pared_49);
 
     //abajo
     paredes_do.push_back(pared_1);
@@ -99,6 +169,13 @@ MainWindow::MainWindow(QWidget *parent)
     paredes_do.push_back(pared_12);
     paredes_do.push_back(pared_18);
     paredes_do.push_back(pared_22);
+    paredes_do.push_back(pared_26);
+    paredes_do.push_back(pared_30);
+    paredes_do.push_back(pared_34);
+    paredes_do.push_back(pared_37);
+    paredes_do.push_back(pared_40);
+    paredes_do.push_back(pared_43);
+    paredes_do.push_back(pared_45);
 
 
     connect(timer,SIGNAL(timeout()),this,SLOT(mover()));
